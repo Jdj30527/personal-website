@@ -1,0 +1,568 @@
+body {
+  margin: 0;
+  font-family: 'Inter';
+    overflow-x: hidden !important;
+    background: black;
+}
+
+section {
+    padding: 0px 0 35px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 100px;
+}
+
+nav a{
+    padding: 0 20px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.profile {
+    max-width: 65%;
+    padding-left: 100px;
+    bottom: -4px;
+}
+
+.header {
+    padding: 100px !important;
+    background-color: aqua;
+}
+
+#name-img {
+    width: 200%; 
+    padding-bottom: 50px;
+}
+
+.resume-header {
+    position: fixed;
+    width: 100%;
+  padding: 20px 16px;
+  background: black;
+  color: #f1f1f1;
+    z-index: 1;
+}
+
+.ev-else {
+    margin-top: 10px;
+    margin-bottom: -100px;
+}
+
+.ev-else > * {
+    flex: 1 100%;
+}
+
+.section-nav {
+    width: 100%;
+    height: 100%;
+}
+
+.profile-picture {
+    min-height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    vertical-align: middle;
+    display: block;
+    margin: 50%;
+}
+
+
+
+.yellow {
+    background-image: url(img/liquid_bg.png);
+}
+
+#about {
+background: black;
+    height: 800px;
+}
+.about-details {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    max-height: 800px;
+    
+}
+
+.about-left {
+    padding-top: 100px;
+    margin: 0;
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    max-height: 50px;
+}
+
+.about-right {
+    width: 50%;
+    height: auto;
+    bottom: 0;
+}
+
+.left {
+    float: left;
+    
+}
+
+.right {
+    float: right;
+}
+
+.left-nav {
+    float: left;
+}
+
+.right-nav {
+    float: right;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.big-text {
+    font-size: 45px;
+}
+
+.education-details {
+    margin: 0;
+    width: inherit;
+    z-index: 1;
+}
+
+.education-header {
+    color: white;
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.button {
+    border-radius:25px;
+    text-transform:uppercase;
+    font-size:14px; 
+    font-weight: 600; 
+    padding:10px 25px;
+    transition:all 200ms;
+    margin:20px 0 10px 0;
+    height: 20px;
+    color: white;
+}
+
+.button.dark { 
+    color:white;
+    border:2px solid white;
+}
+
+.button.dark:hover { 
+    background-image: url(/img/liquid_bg.png);
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.experience-details {
+    width: 100%;
+    background-color: black;
+    height: 100%;
+}
+
+.right-nav a:hover, .right-nav .active-section {
+	color: gray;
+}
+nav a:hover span, nav .active-section span {
+	background-color: gray;
+}
+
+.timeline {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.experience-header {
+    color: white;
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.timeline-container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.timeline-container::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.timeline-block {
+  position: relative;
+  margin: 2em 0;
+}
+
+.timeline-block:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.block-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(157,147,148);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #f9f9f9;
+    
+}
+
+.block-icon i {
+    color: #fff;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.timeline-block-content {
+    position: relative;
+    margin-left: 60px;
+    background: #f9f9f9;
+    border-radius: 0.25em;
+    padding: 1em;
+    height: auto;
+}
+
+.timeline-block-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#education-timeline {
+    position: relative;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#education-timeline::before {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 18px;
+    height: 86%;
+    width: 4px;
+    background: #f9f9f9;
+}
+
+.timeline-block-content .left {
+    display: inline-block;
+    width: 30%;
+    height: 150px;
+}
+
+.timeline-block-content .right {
+    width: 65%;
+    height: auto;
+}
+
+.timeline-date {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+}
+
+#experience-content i {
+    color: grey;
+}
+
+#experience-content .block-icon {
+    box-shadow: 0 0 0 4px grey;
+    background: white;
+}
+
+#experience-content .timeline-block-content {
+    background: grey;
+}
+
+#experience-timeline {
+    position: relative;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#experience-timeline::before {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 18px;
+    height: 86%;
+    width: 4px;
+    background: grey;
+}
+
+.gray {
+    background: white;
+}
+
+.skills-details {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    padding-bottom: 150px;
+}
+
+.skills-header {
+    color: black;
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.skills {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.bar-graph {
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.languages {
+    position: relative;
+    width: 50%;
+    text-align: center;
+    height: 100%;
+}
+
+.fixed:after {
+    visibility: hidden;
+    display: block;
+	font-size: 0;
+    content: " ";
+	clear: both;
+	height: 0;
+}
+
+.skill-header {
+    position: relative;
+    display: block;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.skill-bar {
+    position: relative;
+    display: block;
+    background: transparent;
+    height: 20px;
+    border-radius: 20px;
+    background-color:#7e8ea6;
+}
+
+.skill-bar .skill-bg {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    display: block;
+    overflow: hidden;
+    height: 100%;
+}
+
+.skill-icon {
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+    width: 50px;
+    height: auto;
+    text-align: left;
+    position: relative;
+}
+
+.icon-header {
+    text-align: left;
+    margin-left: 30px;
+}
+
+.skill-key {
+    word-spacing: 50px;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    color: white;
+    border-radius: 20px;
+    margin-left: 100px;
+}
+
+.swift {
+    
+    width: 60%;
+    background-color: #7e8ea6;
+}
+
+.react {
+    
+    width: 30%;
+    background-color: #7e8ea6;
+}
+
+.skills-container {
+    width: 100%;
+}
+
+.skill-sub {
+    color: black;
+    margin: 0 auto;
+}
+
+#skills-content {
+    position: relative;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 700px;
+}
+
+.lang-table {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    display: block;
+}
+
+.text-footer {
+    padding-top: 10px;
+    color: black;
+    
+}
+
+.links {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.links img {
+    padding: 10px;
+    width: 30px;
+    height: auto;
+}
+
+.links img:hover {
+    opacity: 0.2;
+}
+
+/*
+    Mobile
+*/
+
+@media (max-width: 767px) {
+    
+    .resume-header {
+        padding: 0;
+        padding-top: 20px;
+        padding-left: 0;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    
+    #name-img {
+        width: 110%;
+    }
+    
+    .swirl1 {
+        top: 10px;
+        width: 60%;
+    }
+    
+    h1, .big-text, strong {
+        font-size: 1em;
+    }
+    
+    .right-nav {
+        display: none;
+    }
+    
+    .section-nav, .about-left{
+        float: none;
+        display: block;
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .profile {
+        margin: 0 auto;
+        left: -20px;
+    }
+    
+    .left {
+        position: relative;
+        width: 100%;
+    }
+    
+    .right {
+        width: 100%;
+    }
+    
+    .languages {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+    
+    .iconify {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+    
+    footer {
+        height: 0px;
+    }
+    
+    .links img {
+        padding: 10px;
+        width: 20px;
+        height: auto;
+    }
+    
+    .timeline-block-content {
+        width: 70%;
+    }
+}

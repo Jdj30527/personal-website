@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+body {
+  margin: 0;
+  font-family: 'Inter';
+    overflow-x: hidden !important;
+}
+
+section {
+    padding: 0;
+    z-index: 10;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 20px 16px;
+  background: black;
+  color: #f1f1f1;
+    z-index: 10;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 100px;
+}
+
+nav a{
+    padding: 0 20px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.profile-picture {
+    min-width: 75%;
+    max-width: 100%;
+}
+
+.parallax-container {
+    height: 100vh;
+  min-height: 100%;
+  min-width: 100%;
+    background: black;
+    align-items: center;
+}
+
+/*Name PNGs*/
+
+.profile-picture img {
+    margin: 0 10%;
+    vertical-align: middle;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#lay1 {
+    max-width: 80%; 
+    min-width: 50%; 
+    position: absolute;
+}
+
+#lay2 {
+    max-width: 80%; 
+    min-width: 50%; 
+    position: absolute;
+    opacity: 0.3
+}
+
+#lay3 {
+    max-width: 80%; 
+    min-width: 50%; 
+    position: absolute;
+    opacity: 0.4
+}
+
+#lay4 {
+    max-width: 80%; 
+    min-width: 50%; 
+    position: absolute;
+    opacity: 0.5
+}
+
+#lay5 {
+    max-width: 80%; 
+    min-width: 50%; 
+    position: absolute;
+    opacity: 0.6
+}
+
+#lay6 {
+    max-width: 80%; 
+    min-width: 50%; 
+    position: absolute;
+    opacity: 0.7
+}
+
+#lay7 {
+    max-width: 80%; 
+    min-width: 50%; 
+    position: absolute;
+    opacity: 0.8
+}
+
+#lay8 {
+    max-width: 80%; 
+    min-width: 50%; 
+    position: absolute;
+    opacity: 0.9
+}
+
+#lay9 {
+    max-width: 80%; 
+    min-width: 50%; 
+    position: absolute
+}
+
+#lay1 {
+    max-width: 80%; 
+    min-width: 50%; 
+    position: absolute
+}
+
+.arrow {
+  box-sizing: border-box;
+  height: 4vw;
+  width: 4vw;
+  border-style: solid;
+  border-color: white;
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+    bottom: 25px;
+    right: 25px;
+    position: absolute;
+}
+
+.arrow:hover {
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+}
+
+.section-header {
+    position: relative;
+}
+
+.about {
+    position: relative;
+    padding: 5% 15%;
+    margin: 0 auto;
+    text-align: left;
+    background: white;
+}
+
+h3 {
+    color: darkgrey;
+}
+
+.about h2 {
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    display: flex;
+}
+
+
+
+#container {width:100%;}
+
+.vt-class {
+    float: left;
+    font-size: 24px;
+}
+
+.circular-text {
+    position: relative;
+    object-position: left;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    transition: 0.5s ease-out;
+    
+    float: right;
+}
+
+.vt {
+    position: relative;
+    object-position: left;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    transition: 0.5s ease-out;
+    
+    float: right;
+    top: -610px;
+    left: -10%;
+    color: rgb(116, 39, 66);
+}
+
+.retreat {
+    position: relative;
+    object-position: left;
+    transform: translate(-50%, -50%);
+    transition: 0.5s ease-out;
+    opacity: 0.5;
+    float: right;
+    top: -300px;
+    left: -30%;
+    font-size: 40px;
+}
+
+.retreat-blue {
+    color: aliceblue;
+}
+
+.vtlogo {
+    width: 200px;
+    height: auto;
+    
+}
+
+.retreatlogo {
+    width: 200px;
+    height: auto;
+}
+
+.psplogo {
+    width: 200px;
+    height: auto;
+}
+
+#footer {
+    padding: 10px;
+    text-align: center;
+}
+
+.row-title {
+    text-align: center;
+}
+
+.row-contents {
+    padding-top: 20px;
+    line-height: 30px;
+    vertical-align: top;
+}
+
+.vt-about {
+    height: 10px;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.links img {
+    padding: 10px;
+    width: 30px;
+    height: auto;
+}
+
+.links {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.links img:hover {
+    opacity: 0.2;
+}
+
+#header {
+    width: 100%;
+    background: rgb(254,237,81);
+    padding: 0;
+}
+
+@media (max-width: 767px) {
+    
+    .parallax-container {
+        height: 100vh;
+    }
+    
+    .header {
+        padding: 0;
+        padding-top: 20px;
+        padding-left: 0;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    
+    .about p {
+        font-size: 13px;
+    }
+    
+    
+    .title {
+        left: 100px;
+        width: 100%;
+        color: #4682B4;
+        padding: 0;
+    }
+    
+    section {
+        padding: 0px;
+    }
+    
+    .about h2 {
+        font-size: 1em;
+    }
+    
+    .vtlogo, .retreatlogo, .psplogo {
+        width: 100px;
+        vertical-align: top;
+    }
+    
+    .row-contents {
+        font-size: 14px;
+    }
+    
+    .logo-col {
+        vertical-align: top;
+    }
+    
+    .about {
+        padding: 3% 10%;
+    }
+    
+    .links {
+        width: 60%;
+    }
+    
+    .links img {
+        width: 25px;
+    }
+    
+    .gmail {
+        width: 80px;
+    }
+    
+    .circular-text {
+        opacity: 0.7;
+    }
+}

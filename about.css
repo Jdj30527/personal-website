@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+body {
+  margin: 0;
+  font-family: 'Inter';
+    overflow-x: hidden !important;
+}
+
+section {
+    padding: 0;
+    z-index: 10;
+}
+
+.header {
+  padding: 20px 16px;
+  background: black;
+  color: #f1f1f1;
+    z-index: 10;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav a{
+    padding: 0 20px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.about {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.picture {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile {
+    max-width: 60%;
+    max-height: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.links {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.links img {
+    padding: 10px;
+    width: 30px;
+    height: auto;
+}
+
+.links img:hover {
+    opacity: 0.2;
+}
+
+@media (max-width: 767px) {
+    .header {
+        padding: 0;
+        padding-top: 20px;
+        padding-left: 0;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    
+    .profile {
+        max-width: 80%;
+    }
+    
+    .about {
+        width: 80%;
+        font-size: 13px;
+    }
+    
+    .links {
+        width: 60%;
+    }
+    
+    .links img {
+        width: 25px;
+    }
+}
